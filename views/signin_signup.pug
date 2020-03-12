@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    script(src='../javascripts/signin_init.js')
+    .signin-signup
+        div.native-signin 
+            //- (name='nativesignin' method='post' action='/api/v1.0/user/signin')
+            span
+                h2 Email 登入
+            .wrap-input2.validate-input
+                label 信箱
+                input.input2(type='email' name='email' id='email' value='test9@test.com' required)
+            .wrap-input2.validate-input
+                label 密碼
+                input.input2(type='password' name='password' id='password' value='123' required)
+            input(type='button' value='送出' onclick='nativeSignIn()')
+        //- FB 用 input onclick 在 signin.js 裡面操作 (get token, log in)
+        form.fb-signin 
+            span
+                h2 Facebook 登入
+            div
+                input(type='button' value='登入我的 Facebook' onclick='FBLogin();')
+            div
+                input(type='button' value='取消連結 Facebook（測試用）' onclick='Del_FB_App()')
+        form.native-signup
+            //- (name='nativesignup' method='post' action='/api/v1.0/user/signup')
+            span
+                h2 沒帳號？註冊一下
+            .wrap-input2.validate-input
+                label 名字
+                input.input2(type='text' name='name' id='name-signup' required)
+            .wrap-input2.validate-input
+                label 信箱
+                input.input2(type='email' name='email' id='email-signup' required)
+            .wrap-input2.validate-input
+                label 密碼
+                input.input2(type='password' name='password' id='password-signup' required)
+            //- button(type='submit')
+            //-     | 送出
+            input(type='button' value='送出' onclick='nativeSignUp()')
+
+        
+    script(src='../javascripts/signin.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')

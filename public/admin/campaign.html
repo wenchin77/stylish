@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin - Campaign Management</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+</head>
+<body>
+
+	<div class="bg-contact2">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form id= "productform" name="addform" method="post" action="/admin_campaign" enctype="multipart/form-data" class="contact2-form validate-form">
+					<span class="contact2-form-title">
+						Admin - Campaign Management
+					</span>
+
+                    <div class="wrap-input2 validate-input" data-validate="Product ID is required">
+                        <label>Product ID (Make sure it's in the <a href="http://3.135.14.142/api/v1.0/products/all">product data</a>)</label>
+                        <input class="input2" type="number" name="pid">
+                    </div>
+
+                    <div class="wrap-input2 validate-input">
+                        <label>Story</label>
+                        <input class="input2" type="text" name="story">
+                    </div>
+
+					<div class="wrap-input2 validate-input">
+						<label>Campaign Image</label>
+						<input class="input2" type="file" name="campaignimage">
+					</div>		
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Submit Campaign
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Base Styles ------------------- */
+
+body {
+  font: 1em/1 "Noto Sans TC", Arial;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #FFFFFF;
+}
+
+/* wrapper layout --------------------*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  letter-spacing: 0.2em;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #494949;
+}
+
+p {
+  color: grey;
+}
+
+footer p {
+  color: #FFFFFF;
+}
+
+/* header layout --------------------*/
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+
+.nav-bar,
+.nav-cat,
+.nav-search-cart-member {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.nav-bar {
+  border-bottom: 20px solid black;
+  margin: 0;
+}
+
+
+.nav-cat {
+  width: 500px;
+}
+
+.nav-cat li {
+  color: grey;
+  letter-spacing: 0.5em;
+}
+
+
+.nav-search-cart-member {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.nav-cat,
+.logo,
+.search-wrapper {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.search {
+  width: 180px;
+  margin-right: 10px;
+  padding: 10px;
+  padding-right: 40px;
+  border: 1px solid #c5c5c5;
+  border-radius: 20px;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: 98% center;
+}
+
+
+
+.header-image-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.header-text {
+  position: absolute;
+  top: 300px;
+  left: 100px;
+}
+
+.logo {
+  width: 250px;
+  margin-left: 30px;
+}
+
+
+/* section layout --------------------*/
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto;
+  /* margin: 0 auto; */
+}
+
+.item { 
+  /* ajax append 來的裝商品圖片、顏色、名稱、價格容器 */
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.main_image {
+  /* ajax append 來的商品圖片 */
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.products p {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* footer layout --------------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 40px;
+  padding-bottom: 200px;
+  font-size: 0.9em;
+}
+
+.footer-content,
+.social-icon,
+.rights {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 5px;
+  letter-spacing: normal;
+}
+
+
+.social-icon img {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* Pseudo Styles -------------------- */
+header a:visited,
+header a:link,
+section a:visited,
+section a:link {
+  color: #333333;
+  text-decoration: none;
+}
+
+footer a:visited,
+footer a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Product detail page -------------------- */
+.product-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px auto;
+  width: 80%;
+  letter-spacing: 0.08em;
+  line-height: 1.4em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#main-left {
+  flex: 1;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+#main-left img {
+  width: 100%;
+}
+
+#main-right {
+  flex: 1;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.item_detail {
+  height: 80%
+}
+
+.pid,
+.price,
+.colors,
+.sizes,
+.qty,
+.note,
+.description,
+.place {
+  margin-bottom: 20px;
+}
+
+.pid {
+  color: grey;
+}
+
+.price {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.size {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #ececec;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.more_info_item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* card */
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card .jumbotron h2{
+  text-align: center;
+}
+
+.card .container {
+  max-width: 100%;
+}
+.card form {
+  padding: 30px;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.card .tappay-field-focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.card .has-error .tappay-field-focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+.card .has-success .tappay-field-focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+}
+
+/* thankyou page */
+.thankyou {
+  margin: 100px;
+}
+
+/* Profile page -------------------- */
+.signin-signup,
+.profile-wrapper {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 2em;
+}
+
+.native-signin,
+.fb-signin,
+.native-signup {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.signin-signup h2 {
+  color: rgb(107, 107, 107);
+}
+
+.signin-signup input {
+  width: 160px;
+  margin: 10px;
+}
+

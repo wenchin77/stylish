@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title Stylish
+    meta(name='viewport', content='width=device-width,initial-scale=1.0')
+    link(rel='stylesheet', href='../stylesheets/index.css')
+  body
+    .wrapper
+      header.header
+        .nav-bar
+          a(href='/index.html')
+            img.logo(src='../images/logo.png', alt='Stylish logo')
+          div
+            ul.nav-cat
+              li
+                a(href='') 女裝
+              li |
+              li
+                a(href='') 男裝
+              li |
+              li
+                a(href='') 配件
+          .nav-search-cart-member
+            form.search-wrapper
+              input.search(type='text', name='tag')
+            a(href='#')
+              img(src='../images/cart.png')
+            a(href='/profile.html')
+              img(src='../images/member.png')
+      section
+        block content
+            // 裝所有商品的圖片、顏色、名稱、價格的容器: javascripts/index.js
+      footer.footer
+        div
+          ul.footer-content
+            li
+              a(href='#') 關於Stylish
+            li |
+            li
+              a(href='#') 服務條款
+            li |
+            li
+              a(href='#') 隱私政策
+            li |
+            li
+              a(href='#') 聯絡我們
+            li |
+            li
+              a(href='#') FAQ
+        .social-icon
+          a(href='#')
+            img(src='../images/line.png')
+          a(href='#')
+            img(src='../images/twitter.png')
+          a(href='#')
+            img(src='../images/facebook.png')
+        .rights
+          p © 2018. All rights reserved.

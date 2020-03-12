@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../javascripts/signin_init.js"></script>
+    </head>
+    <body>
+        <form name="nativesignin" method="post" action="/api/v1.0/user/signin">
+            <span>
+                Sign in
+            </span>
+            <div class="container" style="margin-top: 10px; margin-bottom: 10px">
+                <div class="wrap-input2 validate-input" data-validate="Product ID is required">
+                    <label>Email</label>
+                    <input class="input2" type="email" name="email">
+                </div>
+                <div class="wrap-input2 validate-input" style="margin-bottom: 10px">
+                    <label>Password</label>
+                    <input class="input2" type="password" name="password">
+                </div>	
+                <button type="submit">
+                    Submit
+                </button>
+            </div>
+            <input name="provider" type="text" value="native" style="display: none;">
+        </form>
+
+        <form>
+            <span>
+                Sign in with Facebook
+            </span>
+            <div>
+                <input type="button" value="Facebook Login" onclick="FBLogin();" />
+            </div>
+        </form>
+        <div>
+            <input type="button" value="Facebook Disconnect" onclick="Del_FB_App()" />
+        </div>
+
+        <script src="../javascripts/signin.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin - Product Management</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+</head>
+<body>
+
+	<div class="bg-contact2">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form id= "productform" name="addform" method="post" action="/admin_product" enctype="multipart/form-data" class="contact2-form validate-form">
+					<span class="contact2-form-title">
+						Admin - Product Management
+					</span>
+
+					<div class="simple-replies">
+						<div class="wrap-input2 validate-input" data-validate="Category is required">
+							<label>Category (women, men or accessories)</label>
+							<input class="input2" type="text" name="category">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Keyword</label>
+							<input class="input2" type="text" name="keyword">
+						</div>
+
+						<div class="wrap-input2 validate-input" data-validate="Title is required">
+							<label>Title</label>
+							<input class="input2" type="text" name="title">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Description</label>
+							<input class="input2" type="text" name="description">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Price</label>
+							<input class="input2" type="number" name="price">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Texture</label>
+							<input class="input2" type="text" name="texture">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Wash</label>
+							<input class="input2" type="text" name="wash">
+						</div>
+
+						<div class="wrap-input2 validate-input" data-validate="Title is required">
+							<label>Place</label>
+							<input class="input2" type="text" name="place">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Note</label>
+							<input class="input2" type="text" name="note">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Story</label>
+							<input class="input2" type="text" name="story">
+						</div>
+					</div>
+
+					<!-- Colors -->
+					<h3>Colors</h3>
+					<br>
+					<div>
+						<div class="wrap-input2 validate-input">
+							<label>Color Name</label>
+							<input class="input2" type="text" name="colorname">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Color Code</label>
+							<input class="input2" type="number" name="colorcode">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Color Name 2</label>
+							<input class="input2" type="text" name="colorname2">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Color Code 2</label>
+							<input class="input2" type="number" name="colorcode2">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Color Name 3</label>
+							<input class="input2" type="text" name="colorname3">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Color Code 3</label>
+							<input class="input2" type="number" name="colorcode3">
+						</div>
+					</div>
+					
+					<!-- Sizes -->
+					<h3>Sizes</h3>
+					<br>
+					<div class="wrap-input2 validate-input">
+							<label>Sizes (separated with commas)</label>
+							<input class="input2" type="text" name="sizes">
+					</div>
+
+					<!-- Variants -->
+					<h3>Variants</h3>
+					<br>
+					<div>
+						<div class="wrap-input2 validate-input">
+							<label>Color Code (hex)</label>
+							<input class="input2" type="number" name="vrcolorcode">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Size</label>
+							<input class="input2" type="text" name="vrsize">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Stock</label>
+							<input class="input2" type="number" name="vrstock">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Color Code 2 (hex)</label>
+							<input class="input2" type="number" name="vrcolorcode2">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Size 2</label>
+							<input class="input2" type="text" name="vrsize2">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Stock 2</label>
+							<input class="input2" type="number" name="vrstock2">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Color Code 3 (hex)</label>
+							<input class="input2" type="number" name="vrcolorcode3">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Size 3</label>
+							<input class="input2" type="text" name="vrsize3">
+						</div>
+
+						<div class="wrap-input2 validate-input">
+							<label>Stock 3</label>
+							<input class="input2" type="number" name="vrstock3">
+						</div>
+					</div>
+
+					<h3>Images</h3>
+					<br>
+					<div class="wrap-input2 validate-input">
+						<label>Main Image</label>
+						<input class="input2" type="file" multiple="multiple" name="images">
+						<label>Second Image</label>
+						<input class="input2" type="file" multiple="multiple" name="images">
+						<label>Third Image</label>
+						<input class="input2" type="file" multiple="multiple" name="images">
+					</div>		
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Submit Product
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
