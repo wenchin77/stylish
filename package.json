@@ -21,7 +21,7 @@
     "node-fetch": "^2.6.0",
     "node-modules": "^1.0.1",
     "npm": "^6.13.2",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "redis": "^2.8.0"
   },
   "devDependencies": {
